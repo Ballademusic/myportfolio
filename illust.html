@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ballade</title>
+    <link rel="stylesheet" href="./ballade.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="./ballade.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">My Portforio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 list">
+                        <li class="nav-item active">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contents">Contents</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#works">Works</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="top2" id="home">
+            <div class="container">
+                <div class="top-contents">
+                    <img src="./image/signature.png" class="top-image">
+                    <p class="subtitle text-break">Illustration/Movie/Music</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="container">
+                <h1 id="about">About</h1>
+                <div class="row">
+                    <div class="col-sm-6 media_icon">
+                        <img class="media-image" id="media_image" src="image\illustration\2022.png"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    </div>
+
+                    <!--モーダルの中身-->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-xl">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">2022　お正月イラスト</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <img class="media-image" id="modal_image" src="image\illustration\2022.png">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h2 class="media_title" id="media_title"> 2022　お正月イラスト</h2>
+                        <p class="text-break media_text" id="media_text">
+                            製作期間:3日<br>
+                            製作時期:2021年12月末<br>
+                            使用ツール:Clip studio Paint<br>
+                            服の模様や髪飾りはフリーの素材を使用しました。
+                            着物の知識がなかったので、その研究をしながら描きました。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 id="contents">Contents</h1>
+            <div class="list-thumbnails">
+                <div>
+                    <img class="thumbnails" id="tumbnail1" src="image\illustration\sumnail\illust1.jpg"
+                        onclick="changeimg(0)">
+                    <img class="thumbnails" id="tumbnail2" src="image\illustration\sumnail\illust2.jpg"
+                        onclick="changeimg(1)">
+                    <img class="thumbnails" id="tumbnail3" src="image\illustration\sumnail\illust3.jpg"
+                        onclick="changeimg(2)">
+                    <img class="thumbnails" id="tumbnail4" src="image\illustration\sumnail\illust4.jpg"
+                        onclick="changeimg(3)">
+                    <img class="thumbnails" id="tumbnail5" src="image\illustration\sumnail\illust5.jpg"
+                        onclick="changeimg(4)">
+                    <img class="thumbnails" id="tumbnail6" src="image\illustration\sumnail\illust6.jpg"
+                        onclick="changeimg(5)">
+                    <img class="thumbnails" id="tumbnail7" src="image\illustration\sumnail\illust7.jpg"
+                        onclick="changeimg(6)">
+                    <img class="thumbnails" id="tumbnail8" src="image\illustration\sumnail\illust8.jpg"
+                        onclick="changeimg(7)">
+                    <img class="thumbnails" id="tumbnail9" src="image\illustration\sumnail\illust9.jpg"
+                        onclick="changeimg(8)">
+                    <img class="thumbnails" id="tumbnail10" src="image\illustration\sumnail\illust10.jpg"
+                        onclick="changeimg(9)">
+                    <img class="thumbnails" id="tumbnail11" src="image\illustration\sumnail\illust11.jpg"
+                        onclick="changeimg(10)">
+                    <img class="thumbnails" id="tumbnail12" src="image\illustration\sumnail\illust12.jpg"
+                        onclick="changeimg(11)">
+                </div>
+                <div class="link-to-pixiv">
+                    <a class="btn-to-pixiv" href="https://www.pixiv.net/users/11892936" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./image/icons/pixiv_icon _svg.svg" width="30px">
+                        Other Illustrations</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="works">
+            <h1 id="works">Works</h1>
+            <div class="works_contents">
+                <div class="contents shadow-drop-center">
+                    <a href="illust.html">
+                        <img class="image" src="./image/top2.jpg" width="200px">
+                    </a>
+                    <h3>Illustrarion</h3>
+                    <p>Vtuberの二次創作をメインに、イラスト製作活動を実施中。Commission経験あり。</p>
+                </div>
+                <div class="contents shadow-drop-center">
+                    <a href="music.html">
+                        <img class="image" src="./image/music.jpg" width="200px">
+                    </a>
+                    <h3>Music</h3>
+                    <p>ピアニストのまらしぃさんなどの曲のcoverをメインにYouTubeにて演奏。現在は休止中。</p>
+                </div>
+                <div class="contents shadow-drop-center">
+                    <a href="movie.html">
+                        <img class="image" src="./image/movie.jpg" width="200px">
+                    </a>
+                    <h3>Movie</h3>
+                    <p>趣味やサークル活動でMMD,AfterEffectsなどで動画を製作。</p>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="icons">
+                <div>
+                    <a href="https://www.pixiv.net/users/11892936" target="_blank" rel="noopener noreferrer">
+                        <img src="./image/icons/pixiv_icon _svg.svg" width="30px">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/ballade04048212" target="_blank" rel="noopener noreferrer">
+                        <img src="./image/icons/twitter_icon_svg.svg" width="30px">
+                    </a>
+                </div>
+                <div>
+                    <a href="https://www.youtube.com/channel/UCaFM-qySaLAQHGnLGLuJyiw" target="_blank"
+                        rel="noopener noreferrer">
+                        <img src="./image/icons/youtube_icon_svg.svg" width="30px">
+                    </a>
+                </div>
+            </div>
+            <p class="copyright">@ 2022 Ballade</p>
+    </footer>
+</body>
+
+</html>
