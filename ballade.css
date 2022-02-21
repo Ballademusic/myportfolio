@@ -1,0 +1,234 @@
+header{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+h2 {
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+h3 {
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+p {
+    font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
+.top {
+    background: url(./image/top.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.top > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.top-contents {
+    text-align: center;
+}
+
+.top-image {
+    width: 50%;
+    min-width: 300px;
+}
+
+.subtitle {
+    color: white;
+    font-size: 38px;
+}
+
+.about > .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.row {
+    padding-top: 10px;
+}
+
+.media_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-media-image{
+    width: 80%;
+}
+
+.media-image {
+    width: 80%;
+}
+
+.media-image:hover {
+    opacity: 0.5;
+}
+
+.media_title {
+    text-align: center;
+}
+
+.works {
+    background-color: rgb(77, 77, 77);
+    color: white;
+    margin: 30px 0;
+    padding: 30px 15px;
+}
+
+.works_contents {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 0;
+}
+
+.works_contents > .contents {
+    width: 33.3333%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.contact {
+    padding: 15px;
+    text-align: right;
+}
+
+.icons {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.icons > div {
+    padding: 0 5px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.shadow-drop-center:hover {
+	-webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+  }
+  @keyframes shadow-drop-center {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+              box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+/*illustページ*/
+.top2 {
+    background: url(./image/top2.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.top2 > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.modal-body {
+    text-align: center;
+}
+
+.modal-body > .media-image {
+    opacity: 1;
+}
+
+.list-thumbnails {
+    text-align: center;
+}
+
+.thumbnails {
+    width: 20%;
+    min-width: 200px;
+    padding: 15px
+}
+
+.thumbnails:hover {
+    opacity: 0.5;
+}
+
+.link-to-pixiv {
+    margin: 20px;
+}
+
+.btn-to-pixiv {
+    background-color: #0096FA;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/*movieページ*/
+.top3 {
+    background: url(./image/movie.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.top3 > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.content-movie {
+    text-align: center;
+}
+
+/*musicページ*/
+.top4 {
+    background: url(./image/music.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
+
+.top4 > .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 150px;
+}
+
+.top4 {
+    background: url(./image/music.jpg) no-repeat center center;
+    background-size: cover;
+    height: 500px;
+}
