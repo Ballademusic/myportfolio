@@ -38,12 +38,16 @@ var texts = Array(mediatext0,mediatext1,mediatext2,
 function changeimg(x){
     var mediaimage = document.getElementById("media_image");
     var modalimage = document.getElementById("modal_image");
+    var modaltitle = document.getElementById("exampleModalLabel");
     var mediatitle = document.getElementById("media_title");
     var mediatext = document.getElementById("media_text");
 
+    /*change media*/
     mediatitle.innerHTML=titles[x];
     mediatext.innerHTML=texts[x];
     mediaimage.src="image/illustration/"+img[x];
+    /*change modal*/
+    modaltitle.innerHTML=titles[x];
     modalimage.src="image/illustration/"+img[x];
     
     var about = document.getElementById("about");
